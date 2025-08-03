@@ -10,7 +10,7 @@ A web scraper to download comics from [popsensei](https://www.popsensei.com/requ
  ``` 
   git clone https://github.com/Calana2/popsensei-scraper
   cd popsensei-scraper
-  go build -o popscrap main.go && sudo cp omg-dl /usr/bin/popscrap
+  go build -o popscrap main.go && sudo cp popscrap /usr/bin/popscrap
 ```
 
 ### Others
@@ -19,7 +19,7 @@ There are a couple of binaries for Linux and Windows amd64 in the releases.
 
 ## Usage
 ```
-└─$ popscrap
+$ popscrap
 A tool to download comics from https://www.popsensei.com/request-a-comic-book/
 
 Usage: popscrap [OPTIONS] [comicURL|issueURL]
@@ -30,6 +30,8 @@ Options:
 -li, --list-issues [issueURL]  List all issues of a comic
 --pdf Convert issues to pdf
 ```
+
+##### TODO: Concurrency
 
 
 
